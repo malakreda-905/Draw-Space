@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>Studio – DrawSpace</title></head><body>
+<header class="nav"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="36" height="36"><span>DrawSpace</span></a><nav><a href="index.html" data-p="index">Home</a><a href="studio.html" data-p="studio">Studio</a><a href="gallery.html" data-p="gallery">My Gallery</a></nav></header>
+<main class="wrap studio">
+<div class="tools" role="toolbar" aria-label="Drawing tools">
+<label>Color <input type="color" id="color" value="#ff4f8b"></label>
+<div class="swatches" id="swatches"></div>
+<label>Size <input type="range" id="size" min="1" max="60" value="8"><output id="sizeOut">8</output></label>
+<button class="btn" id="brush" aria-pressed="true">Brush</button>
+<button class="btn" id="eraser" aria-pressed="false">Eraser</button>
+<button class="btn ghost" id="undo">Undo</button>
+<button class="btn ghost" id="clear">Clear</button>
+</div>
+<canvas id="canvas" width="1000" height="640" aria-label="Drawing canvas"></canvas>
+<div class="tools">
+<input type="text" id="name" placeholder="Name your drawing" maxlength="40">
+<button class="btn" id="save">Save to gallery</button>
+<button class="btn ghost" id="download">Download PNG</button>
+<span id="msg" role="status"></span></div>
+</main><footer>DrawSpace · Made with HTML, CSS &amp; JavaScript</footer>
+<script src="js/common.js"></script><script src="js/studio.js"></script></body></html>
